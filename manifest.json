@@ -1,16 +1,10 @@
 {
-  "manifest_version": 2,
-
-  "name": "Python Chrome Plugin",
-  "description": "This extension runs Python code.",
+  "name": "Next Episode",
+  "description": "Skip to the next episode on anime sites.",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
   },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  "permissions": ["storage"]
 }
